@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<left>
+<html>
+<head>
+<title>Formulario</title>
+<script language="JavaScript">
+function mueveReloj(){
+    momentoActual = new Date()
+    hora = momentoActual.getHours()
+    minuto = momentoActual.getMinutes()
+    segundo = momentoActual.getSeconds()
+
+    str_segundo = new String (segundo)
+    if (str_segundo.length == 1)
+       segundo = "0" + segundo
+
+    str_minuto = new String (minuto)
+    if (str_minuto.length == 1)
+       minuto = "0" + minuto
+
+    str_hora = new String (hora)
+    if (str_hora.length == 1)
+       hora = "0" + hora
+
+    horaImprimible = hora + " : " + minuto + " : " + segundo
+
+    document.form_reloj.reloj.value = horaImprimible
+
+    setTimeout("mueveReloj()",1000)
+}
+</script>
+</head>
+
+<body onload="mueveReloj()">
+
+
+<form name="form_reloj">
+<input type="text" name="reloj" size="10" align="right" style="background-color : purple; color : White; font-family : Verdana, Arial, Helvetica; font-size : 8pt; text-align : center;" onfocus="window.document.form_reloj.reloj.blur()">
+</form>
+</left>
+</body>
+</html>
+<!-- saved from url=(0121)https://cbachilleres10aeropuerto.neolms.com/files/3261398/inicio(3).html?lmsauth=7fe01a1956837bad60744f0c312dd7aa51db52ca -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta charset="utf-5"> 
+  		<title>Formulario1</title>
+  	<link rel="stylesheet" type="text/css" href="estilo.css">	
+</head>
+<html>
+<head>
+<title></title>
+<META HTTP-EQUIV="REFRESH" CONTENT=";URL=http://www.desarrolloweb.com">
+</head>
+<body bgcolor="#E1E1E1"> 
+<center>	
+	<body>
+		
+		<div id="contenedor">
+ 			 	<header>
+         
+
+
+
+  				<nav>
+<center>
+				<li>
+					<a href="file:///C:/Users/gutie/Documents/ANDREA/SITIO%20WEB/Inicio.htm">Inicio</a>
+				</li>
+   				<li>
+
+   					<a href="file:///C:/Users/gutie/Documents/ANDREA/SITIO%20WEB/Pantalones.htm">Pantalones</a>
+   				</li>
+    			<li>
+    				<a href="file:///C:/Users/gutie/Documents/ANDREA/SITIO%20WEB/Playeras.htm">Playeras</a>
+    			</li>
+    			<li>
+    				<a href="file:///C:/Users/gutie/Documents/ANDREA/SITIO%20WEB/Rebajas.htm">Rebajas</a>
+    			</li>
+    			<li>
+    				<a href="file:///C:/Users/gutie/Documents/ANDREA/SITIO%20WEB/Contactos.htm">Contactos</a>
+    			</li>	
+                <li>
+    				<a href="file:///C:/Users/gutie/Documents/ANDREA/SITIO%20WEB/Formulario.htm">Formulario</a>
+    			</li>
+    			</center>	
+  				    <form> 		
+				       <input type="texto">
+				       <input type="submit" value="Buscar">
+              </form> 
+  				</aside>
+
+          <div class="clearfix"> </div>
+  				</nav>
+
+        </center>  
+
+  				<section id="contens">
+    <label for="name">Usuario:</label>
+    <input type="text" id="name" name="user_name">
+  </li>
+    <label for="mail">Contrase&ntildea:</label>
+    <input type="email" id="mail" name="user_mail">
+  </li>
+ 
+
+ </ul>
+</form>
+<section>
+    <h2> DATOS PERSONALES</h2>
+    <fieldset>
+      <legend>GENERO</legend>
+      <ul>
+          
+            <label for="title_1">
+              <input type="radio" id="title_1" name="title" value="K" >
+              Masculino
+            </label>
+          </li>
+          
+            <label for="title_2">
+              <input type="radio" id="title_2" name="title" value="Q">
+              Femenino
+            </label>
+          </li>
+         
+            <label for="title_3">
+              <input type="radio" id="title_3" name="title" value="J">
+              No binario
+              </li>
+          section>
+    <h2> </h2>
+    <fieldset>
+      <legend>EDAD</legend>
+      <ul>
+          
+            <input type="number"/><br></br>
+          </li>
+      </ul>
+    </fieldset>
+    <p>
+      <label for="name">
+        <span>Nombre:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="text" id="name" name="username">
+    </p>
+    <p>
+      <label for="mail">
+        <Span>Correo electr&oacutenico:</ span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="email" id="mail" name="usermail">
+    </p>
+    <p>
+      <label for="pwd">
+        <span>Contrase&ntildea:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="password" id="pwd" name="password">
+    </p>
+</section>
+ <h2> PEDIDOS</h2>
+<form>
+  <fieldset>
+
+    <legend>PONGA LOS DATOS SOLICITADOS</legend>
+    <p>
+       </ul>
+    </fieldset>
+    <p>
+      <label for="name">
+        <span>Enviado por:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="text" id="name" name="username">
+    </p>
+    <p>
+      <label for="mail">
+        <Span>Tel&eacutefono:</ span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="email" id="mail" name="usermail">
+    </p>
+    <p>
+      <label for="pwd">
+        <span>Correo:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="password" id="pwd" name="password">
+    </p>
+    <p>
+      <label for="pwd">
+        <span>Direccion:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="password" id="pwd" name="password">
+    </p>
+</form>
+
+<form>
+  <p>
+    <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry">
+    <label for="taste_1">En efectivo </label>
+  </p>
+  <p>
+    <input type="checkbox" id="taste_2" name="taste_banana" value="banana">
+    <label for="taste_2">Tarjeta</label>
+  </p>
+</form>
+<section>
+    <h2>Informaci&oacuten de tarjeta y pago</h2>
+    <p>
+      <label for="card">
+        <span>Tipo de tarjeta:</span>
+      </label>
+      <select id="card" name="usercard">
+        <option value="visa">Visa</option>
+        <option value="mc">Mastercard</option>
+        <option value="amex">American Express</option>
+        <option value="visa">Paypal</option>
+        <option value="mc">Mercado pago</option>
+        <option value="amex">Expedia</option>
+      </select>
+    </p>
+    <p>
+      <label for="number">
+        <span>N&uacutemero de tarjeta:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="tel" id="number" name="cardnumber">
+    </p>
+    <p>
+      <label for="date">
+        <span>Fecha de caducidad:</span>
+        <strong><abbr title="required">*</abbr></strong>
+        <em>el formato mm/aa</em>
+      </label>
+      <input type="date" id="date" name="expiration">
+    </p>
+    <p>
+      <label for="nic">
+        <span>codigo de seguridad:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="tel" id="number" name="cardnic">
+    </p>
+</section>
+<p> <button type="submit">Validar el pago</button> </p>
+Sugerencias o quejas 
+<p>
+
+
+<input type="text" id="comment" name="comment" value="escribe aqui">
+</p>
+<p>
+
+<input type="hidden" id="timestamp" name="timestamp" value="1286705410">
+</p>
+</BODY>
+  					<article class="articulo"
+  						<h2> 
+  						</h2>
+  						<p> 
+		</section>
+          <footer>	
+  				</footer>	
+
+</div></body></html>
